@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="an interface for detailing process when upload file">
+  <meta name="keywords" content="interface, lossy compresion, video, upload">
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Liquora UI - Upload</title>
+</head>
+
+<body>
+  <!-- content body-->
+  <div class="container content-wrapper">
+    <div class="header-wrapper">
+      <div class="title">How Lossy Compression Works?</div>
+      <div class="desc">this is an interface for detailing process when upload and compress file</div>
+    </div>
+    <div class="footer-wrapper">designed and created with love by Zikri - Liquora UI</div>
+  </div>
+
+  <!-- upload menu -->
+  <div class="upload-wrapper active">
+    <div class="upload-form">
+      <label for="file" class="btn btn-form-upload">Browse file</label>
+      <input type="file" name="file" id="file" hidden>
+    </div>
+    <div class="the-file">
+      <button class="btn-close-file"></button>
+      <div class="file-wrapper">
+        <div>
+          <div class="name"><span class="filename">Failed upload file</span><span class="extension"></span></div>
+          <div class="size"></div>
+        </div>
+      </div>
+      <button class="btn btn-upload">Start Upload</button>
+    </div>
+  </div>
+
+  <!-- Uploading -->
+  <div class="uploading-wrapper">
+    <div class="uploading">
+      <div class="uploading-header">
+        <div class="title">Lossy Compressing is running..</div>
+        <div class="menu-group">
+          <div class="grey"></div>
+          <div class="yellow"></div>
+          <div class="red"></div>
+        </div>
+      </div>
+      <div class="uploading-body">
+        <div class="data">please wait..</div>
+      </div>
+      <div class="button-group">
+        <button class="btn btn-cancel">Cancel</button>
+        <button class="btn btn-result" disabled>Result</button>
+      </div>
+    </div>
+    <div class="result">
+      <div>
+        <div class="title">Result</div>
+        <div class="video-name"><span class="filename"></span><span class="extension"></span></div>
+        <div class="before">
+          <div class="size"></div>
+        </div>
+        <div class="after">
+          <div class="size"></div>
+        </div>
+      </div>
+      <button class="btn btn-save">Save Result</button>
+    </div>
+  </div>
+
+  <!-- error -->
+  <div class="alert">
+    <div class="alert-body"><span class="alert-desc">error</span><button class="btn-close-alert"></button></div>
+  </div>
+
+  <!-- script -->
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
